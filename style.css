@@ -1,12 +1,20 @@
-body {
-    background-color: #3e52a3;
-}
 
 .card {
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    max-height: 700px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
     transition:0.3s;
     border-radius: 5px;
+    background-color: #15273f;
+}
+
+.priceETH{
+    color:aqua;
+    font-size: 22px
 }
 
 .card:hover {
@@ -14,9 +22,31 @@ body {
 }
 
 .container {
-    padding: 2px 16px;
+    /* box-sizing: 100px; */
+    padding: 0px 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    /* height: 500px; */
 }
 
 img {
-    border-radius: 5px 5px 0 0;
+    
+    border-radius: 12px;
+    object-fit: cover;
+    position: relative;
+    top: 12px
+    /* height: 214px; */
+}
+
+
+body {
+    background-color: rgba(13,26,45,255);
+}
+
+.center-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
