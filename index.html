@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel = "stylesheet" href = "style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" > 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
@@ -17,12 +20,12 @@
     
 <body>
 
-  <div class = "card">
+  <div class = "card" data-tilt data-tilt-max="15" data-tilt-speed="900" data-tilt-glare data-tilt-max-glare="0.2">
     <div class ="container" >
 
-    <img src = "images/image-equilibrium.jpg" alt = "block" width="90%" >
+    <img src = "images/image-equilibrium.jpg" alt = "block" width="90%">
     
-      <h4  style= "text-align:left ; color: #f9fdff"><b>Equilibrium #3429</b></h4> 
+      <h4 style= "text-align:left ; color: #f9fdff"><b>Equilibrium #3429</b></h4> 
       <p style= "text-align:left ; color: #5a6f8e">Our Equilibrium collection promotes balance and calm.</p>
     
 
@@ -32,7 +35,7 @@
           <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8" />
           </svg>
           <text>
-            <tspan font-weight="bold" style="color: #00FFF8">0.041 ETH</tspan>
+            <tspan font-weight="bold" style="color: #00FFF8;font-family:'Outfit', sans-serif;">0.041 ETH</tspan>
           </text>
           
 
@@ -44,7 +47,7 @@
             </div>
        
       <text>
-        <tspan font-weight="bold" style="color: #5a6f8e">Creation of Jules Wyvern</tspan>
+        <tspan  font-weight="bold" style="color: #5a6f8e">Creation of Jules Wyvern</tspan>
       </text>
 
 
@@ -71,5 +74,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>. -->
   </div>
+
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.babel.min.js"></script>
 </body>
 </html>

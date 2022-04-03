@@ -5,12 +5,28 @@
     max-width: 300px;
     max-height: 900px;
     margin: auto;
-    text-align: center;
-    font-family: arial;
+    text-align: center;    
     transition:0.3s;
-    border-radius: 5px;
+    flex-direction: column;
+    border-radius: 10px;
     background-color: #15273f;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
 }
+
+h4 {
+    font-family: 'Outfit', sans-serif;
+}
+p {
+    font-family: 'Outfit', sans-serif;
+}
+text {
+    font-family: 'Outfit', sans-serif;
+}
+div {
+    font-family: 'Outfit', sans-serif;
+}
+
 
 .priceETH{
     color:aqua;
@@ -34,6 +50,10 @@ div.outer { position: relative; height: 24px; }
 div.outer img { position: absolute; left: 0; bottom: 0; border-color: rgb(255, 255, 255); border-radius: 100%; border-style: solid;}
 
 
+.block {
+    transform: translateZ(100px);
+}
+
 
 
 img {
@@ -41,7 +61,8 @@ img {
     border-radius: 12px;
     object-fit: cover;
     position: relative;
-    top: 12px
+    top: 12px;
+    
     /* height: 214px; */
 }
 
